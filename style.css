@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+#map {
+    display: block;
+    margin: 20px auto;
+    max-width: 960px;
+    height: 600px;
+}
+
+#tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.county {
+    stroke: white;
+    transition: fill 0.3s ease;
+}
+
+.county:hover {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+#legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.legend-box {
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #000;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
